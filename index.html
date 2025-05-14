@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AxiShop - site vitrine affilié (Amazon, Shein, Alibaba)">
+<link rel="canonical" href="https://axishop.netlify.app/">
+
+  <title>AxiShop - Produits Affiliés</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>AxiShop</h1>
+    <nav>
+      <a href="index.html" class="active">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Nos produits affiliés</h2>
+      <label for="categoryFilter">Filtrer par catégorie :</label>
+      <select id="categoryFilter">
+        <option value="all">Toutes</option>
+      </select>
+      <div id="products" class="product-grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AxiShop. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

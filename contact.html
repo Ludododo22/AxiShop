@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - AxiShop</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>AxiShop</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <h2>Contactez-nous</h2>
+    <form id="contactForm">
+      <input type="text" placeholder="Votre nom" required />
+      <input type="email" placeholder="Votre e-mail" required />
+      <textarea placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+    <p id="formStatus"></p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 AxiShop. Tous droits réservés.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById("contactForm");
+    const status = document.getElementById("formStatus");
+
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      status.textContent = "Message envoyé (simulation)";
+      form.reset();
+    });
+  </script>
+</body>
+</html>
